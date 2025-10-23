@@ -106,7 +106,6 @@
         $(window).on('resize', function() {
             if (window.innerWidth > 768) {
                 $('.feature-card').show();
-                $('.slide-indicators').hide();
             } else {
                 initSlideShow();
             }

@@ -33,7 +33,8 @@ function nailschooltokyo_scripts() {
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap', array(), null);
     
     // JavaScript
-    wp_enqueue_script('nailschooltokyo-script', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true);
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('nailschooltokyo-script', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'nailschooltokyo_scripts');
 

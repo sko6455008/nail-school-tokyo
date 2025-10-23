@@ -1,100 +1,75 @@
 <?php get_header(); ?>
 
 <!-- ヒーローセクション -->
-<section class="hero-section">
-    <div class="hero-container">
-        <div class="hero-content">
-            <!-- 背景画像 -->
-            <div class="hero-background">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/person.png" alt="ネイリスト" class="hero-image">
-                
-                <!-- キャッチコピー -->
-                <div class="catchcopy-overlay">
-                    <div class="chat-bubble">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/chat.png" alt="吹き出し" class="chat-image">
-                        <div class="chat-text">
-                            <span class="main-text">売れっ子ネイリスト！</span>
-                        </div>
+<section>
+    <div>
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/person.png'); ?>" class="hero-image" alt="ネイルスクール東京">
+    </div>
+</section>
+
+<!-- About Schoolセクション -->
+<section class="about-school-section">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">About School</h2>
+            <h2 class="section-subtitle">ファッシーナ・ネイルアカデミーとは?</h1>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card" data-slide="0">
+                <div class="feature-number">01</div>
+                <div class="feature-content">
+                    <h3 class="feature-title"><span class="highlight-text">20代</span>に支持される!!</h3>
+                    <div class="feature-description">
+                        <p class="feature-description-text">どこでも通用する</p>
+                        <p class="feature-description-text">ネイリストを目指せます</p>
+                        <p class="small-text">マシーンやフィルイン、</p>
+                        <p class="small-text">長さだし、補強、人気のアートを学べる</p>
                     </div>
-                </div>
-                
-                <!-- ネイルアート画像 -->
-                <div class="nail-art-overlay">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/Group 57.png" alt="ネイルアート" class="nail-art-image">
-                </div>
-                
-                <!-- オフ込みテキスト -->
-                <div class="off-text-overlay">
-                    <p class="off-text">オフ込み<span class="highlight-number">60</span>分・<span class="highlight-number">90</span>分入客</p>
-                </div>
-                
-                <!-- LINEお問い合わせボタン -->
-                <div class="line-button-overlay">
-                    <a href="#" class="line-button">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/line.png" alt="LINE" class="line-icon">
-                        <span class="line-text">LINEでお問い合わせ</span>
-                    </a>
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/access.jpg'); ?>" class="feature-image" alt="アクセス画像">
                 </div>
             </div>
+            
+            <div class="feature-card" data-slide="1">
+                <div class="feature-number">02</div>
+                <div class="feature-content">
+                    <h3 class="feature-title"><span class="highlight-text">挫折</span>させない!!</h3>
+                    <div class="feature-description">
+                        <p class="feature-description-text">サロンへの就職 or サロンの開業へ</p>
+                        <p class="feature-description-text">安心のサポート体制をご提供します</p>
+                        <p class="small-text">テキストテキストテキストテキスト</p>
+                        <p class="small-text">テキストテキストテキストテキスト</p>
+                    </div>
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/access.jpg'); ?>" class="feature-image" alt="アクセス画像">
+                </div>
+            </div>
+            
+            <div class="feature-card" data-slide="2">
+                <div class="feature-number">03</div>
+                <div class="feature-content">
+                    <h3 class="feature-title"><span class="highlight-text">人気</span>ネイリストへ!!!</h3>
+                    <div class="feature-description">
+                        <p class="feature-description-text">ファッシーナネイルアカデミーでの</p>
+                        <p class="feature-description-text">ネイリストへの道</p>
+                        <p class="small-text">テキストテキストテキストテキスト</p>
+                        <p class="small-text">テキストテキストテキストテキスト</p>
+                    </div>
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/access.jpg'); ?>" class="feature-image" alt="アクセス画像">
+                </div>
+            </div>
+        </div>
+        
+        <!-- スライドショー用のインジケーター -->
+        <div class="slide-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
         </div>
     </div>
 </section>
 
 <main class="site-main">
-    <div class="container">
-        <?php if (have_posts()) : ?>
-            <div class="posts-container">
-                <?php while (have_posts()) : the_post(); ?>
-                    <article id="post-<?php the_ID(); ?>" <?php post_class('post-item'); ?>>
-                        <?php if (has_post_thumbnail()) : ?>
-                            <div class="post-thumbnail">
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php the_post_thumbnail('large'); ?>
-                                </a>
-                            </div>
-                        <?php endif; ?>
-                        
-                        <div class="post-content">
-                            <header class="post-header">
-                                <h2 class="post-title">
-                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                </h2>
-                                <div class="post-meta">
-                                    <span class="post-date"><?php echo get_the_date(); ?></span>
-                                    <span class="post-author">投稿者: <?php the_author(); ?></span>
-                                    <?php if (has_category()) : ?>
-                                        <span class="post-categories">カテゴリー: <?php the_category(', '); ?></span>
-                                    <?php endif; ?>
-                                </div>
-                            </header>
-                            
-                            <div class="post-excerpt">
-                                <?php the_excerpt(); ?>
-                            </div>
-                            
-                            <footer class="post-footer">
-                                <a href="<?php the_permalink(); ?>" class="read-more">続きを読む</a>
-                            </footer>
-                        </div>
-                    </article>
-                <?php endwhile; ?>
-            </div>
-            
-            <?php
-            // ページネーション
-            the_posts_pagination(array(
-                'prev_text' => '前のページ',
-                'next_text' => '次のページ',
-            ));
-            ?>
-            
-        <?php else : ?>
-            <div class="no-posts">
-                <h2>投稿が見つかりません</h2>
-                <p>申し訳ございませんが、お探しのコンテンツが見つかりませんでした。</p>
-            </div>
-        <?php endif; ?>
-    </div>
+
 </main>
 
 <?php get_footer(); ?>

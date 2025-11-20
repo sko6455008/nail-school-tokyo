@@ -35,6 +35,7 @@ function nailschooltokyo_scripts() {
     // JavaScript
     wp_enqueue_script('jquery');
     wp_enqueue_script('nailschooltokyo-script', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('qa-accordion', get_template_directory_uri() . '/assets/js/qa-accordion.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'nailschooltokyo_scripts');
 

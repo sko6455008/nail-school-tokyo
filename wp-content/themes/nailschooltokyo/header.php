@@ -17,15 +17,24 @@
 
     <header>
         <div class="row">
-            <div class="col-2">
-            </div>
-            <div class="col-8 logo-container">
+            <div class="col-2 logo-container">
                 <a href="<?php echo home_url(); ?>">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/logo.png" alt="Nail School Tokyo">
                 </a>
             </div>
-            <div class="col-2 right-icons">
+            <div class="col-10 right-icons">
                 <div class="right-container">
+                    <nav class="desktop-menu" role="navigation" aria-label="デスクトップメニュー">
+                        <ul>
+                            <li><a href="#about">スクールについて</a></li>
+                            <li><a href="#course">コース内容</a></li>
+                            <li><a href="#skills">学べる技術</a></li>
+                            <li><a href="#procedure">入校手順</a></li>
+                            <li><a href="#access">アクセス</a></li>
+                            <li><a href="#qa">よくある質問</a></li>
+                        </ul>
+                    </nav>
+                    <!-- ハンバーガーメニューボタン -->
                     <button class="menu-toggle">&#9776;</button>
                 </div>
             </div>
@@ -33,31 +42,16 @@
     </header>
 
     <nav class="sp-menu" role="navigation" aria-label="メニュー">
-        <?php
-        wp_nav_menu(array(
-            'theme_location' => 'primary',
-            'container' => false,
-            'menu_class' => '',
-            'fallback_cb' => false,
-            'items_wrap' => '<ul id="%1$s" class="%2$s" role="menubar">%3$s</ul>'
-        ));
-        ?>
+        <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#about">スクールについて</a></li>
+            <li><a href="#course">コース内容</a></li>
+            <li><a href="#skills">学べる技術</a></li>
+            <li><a href="#procedure">入校手順</a></li>
+            <li><a href="#access">アクセス</a></li>
+            <li><a href="#qa">よくある質問</a></li>
+        </ul>
         <button class="menu-close">×</button>
-
-        <div class="menu-sns">
-            <a href="https://www.instagram.com/nailschooltokyo/" target="_blank" class="sns-button fascina-button">
-                <i class="fab fa-instagram"></i>
-                <span>Fascina</span>
-            </a>
-            <a href="https://www.instagram.com/twelor/" target="_blank" class="sns-button twelor-button">
-                <i class="fab fa-instagram"></i>
-                <span>Twelor</span>
-            </a>
-            <a href="https://lin.ee/nailschooltokyo" target="_blank" class="sns-button line-button">
-                <i class="fab fa-line"></i>
-                <span>LINEで無料相談する</span>
-            </a>
-        </div>
     </nav>
 
     <div class="menu-overlay"></div>

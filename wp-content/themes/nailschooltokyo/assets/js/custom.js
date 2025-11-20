@@ -15,11 +15,18 @@
             var target = this.hash;
             var $target = $(target);
             
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top - 70
-            }, 900, 'swing', function() {
-                window.location.hash = target;
-            });
+            // ターゲット要素が存在する場合のみスクロール
+            if ($target.length) {
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 70
+                }, 900, 'swing', function() {
+                    window.location.hash = target;
+                });
+                
+                // メニューを閉じる
+                $spMenu.removeClass('active');
+                $overlay.removeClass('active');
+            }
         });
 
         // スマホメニューの開閉
@@ -65,50 +72,77 @@
         // 初期表示時にもチェック
         handleScrollAnimation();
         
-        // スライドショー機能（768px以下）
+        // スライドショー機能
+        var slideShowInterval = null;
+        var $cards = $('.feature-card');
+        var $indicators = $('.indicator');
+        var currentSlide = 0;
+        var totalSlides = $cards.length;
+        
+        function showSlide(index) {
+            $cards.hide();
+            $cards.eq(index).show();
+            $indicators.removeClass('active');
+            $indicators.eq(index).addClass('active');
+            currentSlide = index;
+        }
+        
+        function nextSlide() {
+            var next = (currentSlide + 1) % totalSlides;
+            showSlide(next);
+        }
+        
+        function startAutoSlide() {
+            // 既存のインターバルをクリア
+            if (slideShowInterval) {
+                clearInterval(slideShowInterval);
+            }
+            // 15秒ごとに自動切り替え
+            slideShowInterval = setInterval(function() {
+                nextSlide();
+            }, 15000);
+        }
+        
+        function stopAutoSlide() {
+            if (slideShowInterval) {
+                clearInterval(slideShowInterval);
+                slideShowInterval = null;
+            }
+        }
+        
         function initSlideShow() {
             if (window.innerWidth <= 768) {
-                var $cards = $('.feature-card');
-                var $indicators = $('.indicator');
-                var currentSlide = 0;
-                var totalSlides = $cards.length;
-                
-                function showSlide(index) {
-                    $cards.hide();
-                    $cards.eq(index).show();
-                    $indicators.removeClass('active');
-                    $indicators.eq(index).addClass('active');
-                    currentSlide = index;
-                }
-                
-                function nextSlide() {
-                    var next = (currentSlide + 1) % totalSlides;
-                    showSlide(next);
-                }
+                // モバイル: スライドショー表示
+                showSlide(0);
+                startAutoSlide();
                 
                 // カードクリックで次のスライド
-                $cards.on('click', function() {
+                $cards.off('click.slideshow').on('click.slideshow', function() {
+                    stopAutoSlide();
                     nextSlide();
+                    startAutoSlide();
                 });
                 
                 // インジケータークリックで指定スライド
-                $indicators.on('click', function() {
+                $indicators.off('click.slideshow').on('click.slideshow', function() {
+                    stopAutoSlide();
                     var slideIndex = parseInt($(this).data('slide'));
                     showSlide(slideIndex);
+                    startAutoSlide();
                 });
-                
-                // 初期表示
-                showSlide(0);
+            } else {
+                // デスクトップ: 全てのカードを表示
+                stopAutoSlide();
+                $cards.show();
+                $cards.off('click.slideshow');
+                $indicators.off('click.slideshow');
             }
         }
         
         // ウィンドウリサイズ時の処理
         $(window).on('resize', function() {
-            if (window.innerWidth > 768) {
-                $('.feature-card').show();
-            } else {
-                initSlideShow();
-            }
+            stopAutoSlide();
+            initSlideShow();
         });
         
         // 初期化

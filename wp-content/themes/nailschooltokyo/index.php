@@ -123,10 +123,10 @@
             <div class="graduation-content">
                 <h2 class="graduation-title">当スクールを卒業すると</h2>
                 <ul class="graduation-list">
-                    <li class="graduation-item">施術ができる技術と接客スキルをもったネイリストになれる</li>
-                    <li class="graduation-item">より実践的な施術練習を通して、スピーディーかつ美しい仕上がりを実現する技術を身につけれる</li>
-                    <li class="graduation-item">トレンドを意識し、お客様の要望に沿った提案が可能に</li>
-                    <li class="graduation-item">当スクールの系列サロンに就職可能に</li>
+                    <li class="graduation-item">施術ができる技術と接客スキルをもったネイリストに！</li>
+                    <li class="graduation-item">より実践的な施術練習を通して、スピーディーかつ美しい仕上がりを実現する技術が習得可能！</li>
+                    <li class="graduation-item">トレンドを意識し、お客様の要望に沿った提案が可能に！</li>
+                    <li class="graduation-item">当スクールの系列サロンに就職も可能！</li>
                 </ul>
             </div>
         </div>
@@ -164,13 +164,13 @@
                             <h4 class="course-detail-label">期間</h4>
                             <p class="course-detail-text">期間：3ヵ月間</p>
                             <p class="course-detail-text">合計：480時間(8時間×60日)</p>
-                            <p class="course-detail-text">3ヵ月内で480時間分の授業を消化して頂くコースです！<br>1授業が8時間で、1日1回受講することが可能です！</p>
+                            <p class="course-detail-text">3ヵ月内で480時間分の授業を消化して頂くコースです！<br>1授業が8時間で、1日1回受講することが可能です。</p>
                             <p class="course-detail-text">【スケジュール】<br>授業開始 12:00～21:00(休憩含む)</p>
                         </div>
                         <div class="course-detail-item">
                             <h4 class="course-detail-label">オプション</h4>
                             <p class="course-detail-text">費用：1単位(4時間)あたり5,000円(税込)</p>
-                            <p class="course-detail-text">更に極めたい、苦手分野を克服したい方におすすめのコースです！</p>
+                            <p class="course-detail-text">更に極めたい、苦手分野を克服したい方におすすめのコースです。</p>
                             <p class="course-detail-text">※当スクールの卒業生は3割引で受講可能です。</p>
                         </div>
                     </div>
@@ -197,13 +197,13 @@
                             <h4 class="course-detail-label">期間</h4>
                             <p class="course-detail-text">期間：9ヵ月間</p>
                             <p class="course-detail-text">合計：480時間(4時間×120日)</p>
-                            <p class="course-detail-text">9ヵ月内で480時間分の授業を消化して頂くコースです！<br>1授業が4時間で、1日2回受講することが可能です！</p>
+                            <p class="course-detail-text">9ヵ月内で480時間分の授業を消化して頂くコースです！<br>1授業が4時間で、1日2回受講することが可能です。</p>
                             <p class="course-detail-text">【スケジュール】<br>授業開始(第一部) 12:00～16:00(休憩含まない)<br>授業開始(第二部) 17:00～21:00(休憩含まない)</p>
                         </div>
                         <div class="course-detail-item">
                             <h4 class="course-detail-label">オプション</h4>
                             <p class="course-detail-text">費用：1単位(4時間)あたり5,000円(税込)</p>
-                            <p class="course-detail-text">更に極めたい、苦手分野を克服したい方におすすめです！</p>
+                            <p class="course-detail-text">更に極めたい、苦手分野を克服したい方におすすめです。</p>
                             <p class="course-detail-text">※当スクールの卒業生は3割引で受講可能です。</p>
                         </div>
                     </div>
@@ -234,11 +234,13 @@
                 </div>
                 <div class="skill-content">
                     <div class="skill-point-header">
-                        <h3 class="skill-point-number">Skill.1</h3>
+                        <h3 class="skill-point-number">Point1</h3>
                     </div>
                     <h4 class="skill-point-title">基礎知識</h4>
                     <div class="skill-point-description">
-                        <p>道具の名称・知識、爪の構造・病気トラブル、衛星管理、技術理論、カウンセリング方法が習得可能！</p>
+                        <p><span class="skill-point-odd-line">道具の名称・知識、</span><span class="skill-point-odd-line">爪の構造・病気トラブル、</span><span class="skill-point-odd-line">衛星管理、</span><span class="skill-point-odd-line">技術理論、</span><span class="skill-point-odd-line">カウンセリング方法</span>が習得可能です。</p>
+                        <p>道具の名称と扱い方、爪の構造や起こりやすい症状、施術に欠かせない衛生管理、技術の根拠を理解する技術理論、<br>
+                        お客様の要望を聞き出すカウンセリングの基本まで習得でき、土台となる知識をしっかり身につけられます。</p>
                     </div>
                 </div>
             </div>
@@ -249,11 +251,13 @@
                 </div>
                 <div class="skill-content">
                     <div class="skill-point-header">
-                        <h3 class="skill-point-number">Skill.2</h3>
+                        <h3 class="skill-point-number">Point2</h3>
                     </div>
                     <h4 class="skill-point-title">ネイルケア</h4>
                     <div class="skill-point-description">
-                        <p>ファイリング、ハンド＆フットケア、ウォーターケアが習得可能！</p>
+                        <p><span class="skill-point-even-line">ファイリング、</span><span class="skill-point-even-line">ハンド＆フットケア、</span><span class="skill-point-even-line">ウォーターケア</span>が習得可能！</p>
+                        <p>ネイルケアでは、甘皮処理やルースキューティクルの正確な除去、爪質に合わせたファイリング角度の判断など、ケア特有の繊細な技術を重点的に指導します。</p>
+                        <p>現場で差がつくケアの判断基準も学べ、初心者でも品質の高いケアができる力を育てます。</p>
                     </div>
                 </div>
             </div>
@@ -264,11 +268,13 @@
                 </div>
                 <div class="skill-content">
                     <div class="skill-point-header">
-                        <h3 class="skill-point-number">Skill.3</h3>
+                        <h3 class="skill-point-number">Point3</h3>
                     </div>
                     <h4 class="skill-point-title">マシーンケア</h4>
                     <div class="skill-point-description">
-                        <p>マシーンの基本的な使い方、オフ、プレパレーション、フィルインが習得可能！</p>
+                        <p><span class="skill-point-odd-line">マシーンの基本的な使い方、</span><span class="skill-point-odd-line">オフ、</span><span class="skill-point-odd-line">プレパレーション、</span><span class="skill-point-odd-line">フィルイン</span>が習得可能です。</p>
+                        <p>マシーンの速度調整やビットの選び方など基礎を押さえつつ、ジェルのオフ方法、甘皮周りを整えるプレパレーション、余分な部分だけを削るフィルインまで実践的に学べます。</p>
+                        <p>爪に負担をかけない安全な操作を基礎から習得できます。</p>
                     </div>
                 </div>
             </div>
@@ -279,11 +285,13 @@
                 </div>
                 <div class="skill-content">
                     <div class="skill-point-header">
-                        <h3 class="skill-point-number">Skill.4</h3>
+                        <h3 class="skill-point-number">Point4</h3>
                     </div>
                     <h4 class="skill-point-title">長さ出し・補強</h4>
                     <div class="skill-point-description">
-                        <p>サロンワークで即戦力となるためのジェル、チップ、アクリル技術が習得可能！</p>
+                        <p><span class="skill-point-even-line">サロンワークで即戦力となるためのジェル、</span><span class="skill-point-even-line">チップ、</span><span class="skill-point-even-line">アクリル技術</span>が習得可能です。</p>
+                        <p>ジェル、チップ、アクリルを使った長さだしの作り方だけでなく、フォルム調整や強度を確保する補強技術まで体系的に学べ、</p>
+                        <p>自然で耐久性の高い仕上がりを再現する力に加え、さらに、トラブルを防ぐための下準備や道具の扱いも学べるため、安心して施術できる確かな技術が身につきます。</p>
                     </div>
                 </div>
             </div>
@@ -294,11 +302,13 @@
                 </div>
                 <div class="skill-content">
                     <div class="skill-point-header">
-                        <h3 class="skill-point-number">Skill.5</h3>
+                        <h3 class="skill-point-number">Point5</h3>
                     </div>
                     <h4 class="skill-point-title">ネイルアート</h4>
                     <div class="skill-point-description">
-                        <p>ワンカラー、ラメグラ、マグネット、トレンドデザインが習得可能！</p>
+                        <p><span class="skill-point-odd-line">ワンカラー、</span><span class="skill-point-odd-line">ラメグラ、</span><span class="skill-point-odd-line">マグネット、</span><span class="skill-point-odd-line">トレンドデザイン</span>が習得可能です。</p>
+                        <p>ワンカラーの筆圧調整、ラメを均等に広げるグラデーション技法、マグネットで立体感を出す操作、人気のトレンドデザインまで学べます。</p>
+                        <p>道具の選び方や細かいラインの描き方も理解でき、初心者でも美しくアートを仕上げられます。</p>
                     </div>
                 </div>
             </div>
@@ -309,11 +319,13 @@
                 </div>
                 <div class="skill-content">
                     <div class="skill-point-header">
-                        <h3 class="skill-point-number">Skill.6</h3>
+                        <h3 class="skill-point-number">Point6</h3>
                     </div>
                     <h4 class="skill-point-title">サロンワーク技術</h4>
                     <div class="skill-point-description">
-                        <p>サロンワーク特化ならではの、モデル入客を通して実践的な接客テクニック、マナーが習得可能！</p>
+                        <p><span class="skill-point-even-line">サロンワーク特化ならではの、</span><span class="skill-point-even-line">モデル入客を通して実践的な接客テクニック、</span><span class="skill-point-even-line">マナー</span>が習得可能です。</p>
+                        <p>実際のモデル入客を通して、施術前のヒアリング方法、メニュー提案の仕方、施術中の声がけや手元の見せ方、仕上げ確認の進め方まで学べます。</p>
+                        <p>サロンで求められる接客マナーや時間配分も習得でき、現場で役立つ対応力が身につきます。</p>
                     </div>
                 </div>
             </div>
